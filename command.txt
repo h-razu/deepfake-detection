@@ -1,0 +1,12 @@
+# Original clean videos
+python download.py data/faceforensics++ -d original -c c23 -t videos
+
+# Four manipulated types
+python download.py data/faceforensics++ -d Face2Face -c c23 -t videos
+python download.py data/faceforensics++ -d FaceSwap -c c23 -t videos
+python download.py data/faceforensics++ -d Deepfakes -c c23 -t videos
+python download.py data/faceforensics++ -d NeuralTextures -c c23 -t videos
+
+
+#limit download
+python download.py data/faceforensics++ -d Face2Face -c c23 -t videos --server EU2 -n 100
